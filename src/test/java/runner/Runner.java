@@ -10,8 +10,11 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 		dryRun = !true,
 		glue = {"stepdefinition" , "hook"},
 		snippets = SnippetType.CAMELCASE,
-		monochrome = true
-		
+		monochrome = true,
+		plugin = {"pretty",
+				  "json:target/cucumber-reports/Cucumber.json",   // JSON report
+				  "html:target/cucumber-reports/html-report.html" // Optional HTML report
+				}
 		
 		)
 

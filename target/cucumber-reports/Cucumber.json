@@ -1,0 +1,117 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2073040100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Login with invalid credentials",
+        "description": "",
+        "id": "to-validate-the-error-message-in-login-functionality;login-with-invalid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 214597200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 317900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user should navigate the application",
+            "match": {
+              "location": "ValidateLoginErrorMsg.userShouldNavigateTheApplication()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 108278300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters the invalid username",
+            "match": {
+              "location": "ValidateLoginErrorMsg.userEntersTheInvalidUsername()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 84910700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters the invalid password",
+            "match": {
+              "location": "ValidateLoginErrorMsg.userEntersTheInvalidPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 105447000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks the login button",
+            "match": {
+              "location": "ValidateLoginErrorMsg.userClicksTheLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 44760100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should see the error message",
+            "match": {
+              "location": "ValidateLoginErrorMsg.userShouldSeeTheErrorMessage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18481400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should validate the error message",
+            "match": {
+              "location": "ValidateLoginErrorMsg.userShouldValidateTheErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "To validate the error message in login functionality",
+    "description": "",
+    "id": "to-validate-the-error-message-in-login-functionality",
+    "keyword": "Feature",
+    "uri": "C:\\Users\\venka\\eclipse-workspace\\BookCart\\src\\main\\resources\\features\\validateLoginErrorMsg.feature",
+    "tags": []
+  }
+]
