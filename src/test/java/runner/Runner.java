@@ -6,7 +6,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions(
 		
-		features = {"C:\\Users\\venka\\eclipse-workspace\\BookCart\\src\\main\\resources\\features\\loginandcheckout.feature"},
+		features = {"C:\\Users\\venka\\eclipse-workspace\\BookCart\\src\\main\\resources\\features"},
 		dryRun = !true,
 		glue = {"stepdefinition" , "hook"},
 		snippets = SnippetType.CAMELCASE,

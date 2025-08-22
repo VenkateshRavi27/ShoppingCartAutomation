@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 1308321600,
+              "duration": 1851133700,
               "status": "passed"
             },
             "match": {
@@ -18,12 +18,23 @@
         "name": "Login with valid credential and checkout order",
         "description": "",
         "id": "user-should-login-with-valid-credentials-and-purchase-the-product;login-with-valid-credential-and-checkout-order",
+        "after": [
+          {
+            "result": {
+              "duration": 165573700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 718725900,
+              "duration": 305150100,
               "status": "passed"
             },
             "line": 4,
@@ -35,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 33062800,
+              "duration": 27787600,
               "status": "passed"
             },
             "line": 5,
@@ -47,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 80220100,
+              "duration": 87379300,
               "status": "passed"
             },
             "line": 6,
@@ -59,7 +70,7 @@
           },
           {
             "result": {
-              "duration": 70042700,
+              "duration": 65591200,
               "status": "passed"
             },
             "line": 7,
@@ -71,7 +82,7 @@
           },
           {
             "result": {
-              "duration": 61765600,
+              "duration": 69512100,
               "status": "passed"
             },
             "line": 8,
@@ -83,7 +94,7 @@
           },
           {
             "result": {
-              "duration": 61541000,
+              "duration": 68194100,
               "status": "passed"
             },
             "line": 9,
@@ -95,7 +106,7 @@
           },
           {
             "result": {
-              "duration": 251624200,
+              "duration": 241344900,
               "status": "passed"
             },
             "line": 10,
@@ -107,7 +118,7 @@
           },
           {
             "result": {
-              "duration": 24816800,
+              "duration": 15412900,
               "status": "passed"
             },
             "line": 11,
@@ -119,7 +130,7 @@
           },
           {
             "result": {
-              "duration": 96978900,
+              "duration": 65033300,
               "status": "passed"
             },
             "line": 12,
@@ -137,6 +148,121 @@
     "id": "user-should-login-with-valid-credentials-and-purchase-the-product",
     "keyword": "Feature",
     "uri": "C:\\Users\\venka\\eclipse-workspace\\BookCart\\src\\main\\resources\\features\\loginandcheckout.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1256428400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Login with invalid credentials",
+        "description": "",
+        "id": "to-validate-the-error-message-in-login-functionality;login-with-invalid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 143693300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 365600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user should navigate the application",
+            "match": {
+              "location": "ValidateLoginErrorMsg.userShouldNavigateTheApplication()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 103161700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters the invalid username",
+            "match": {
+              "location": "ValidateLoginErrorMsg.userEntersTheInvalidUsername()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 62061400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters the invalid password",
+            "match": {
+              "location": "ValidateLoginErrorMsg.userEntersTheInvalidPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 77361300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks the login button",
+            "match": {
+              "location": "ValidateLoginErrorMsg.userClicksTheLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30847000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should see the error message",
+            "match": {
+              "location": "ValidateLoginErrorMsg.userShouldSeeTheErrorMessage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17824700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should validate the error message",
+            "match": {
+              "location": "ValidateLoginErrorMsg.userShouldValidateTheErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "To validate the error message in login functionality",
+    "description": "",
+    "id": "to-validate-the-error-message-in-login-functionality",
+    "keyword": "Feature",
+    "uri": "C:\\Users\\venka\\eclipse-workspace\\BookCart\\src\\main\\resources\\features\\validateLoginErrorMsg.feature",
     "tags": []
   }
 ]
